@@ -1,0 +1,17 @@
+.header{
+    text-align: center;
+    font-family: verdana;
+}
+
+.myBody{
+    text-align: center;
+    font-family: verdana;
+}
+
+.myImg{
+    height:480px; width:360px;
+}
+
+.body{
+    background-color: coral;
+}

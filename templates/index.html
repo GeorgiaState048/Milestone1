@@ -1,0 +1,24 @@
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="body">
+    <div class = "header">
+        <h1>Find your new favorite movie!</h1>
+        <h2>Refresh the page to discover more movies!</h2>
+    </div>
+    <div class="myBody">
+        <h1>
+        {{ title }} <br>
+        {{ tagline }} <br>
+            {% for i in (genres) %} 
+                <h1>{{i}}</h1>
+            {%endfor%}    
+            <br>
+        <img src={{moviePoster}} class="myImg" /> <br>
+        <a href="{{ wikiPage }}">Click Here to See the WikiPedia Page!<br>
+        </h1>
+    </div>
+</body>    
+    
+</html>
